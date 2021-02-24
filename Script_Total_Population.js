@@ -11,6 +11,7 @@ request.onload= function()
     var total_population = 0;
     for(var i in countryData)
     {
+        console.log(countryData[i].name+" population is "+ countryData[i].population);
         total_population += +countryData[i].population;
     }
     console.log("ToTal_Poplation"+'  '+total_population);
